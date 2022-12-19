@@ -1,0 +1,77 @@
+
+.item{
+    padding: 10px;
+    border: 1px solid black;
+
+}
+.block{
+    display: grid;
+    background-color:rgb(231, 17, 35);
+    /* сетка-шаблон-столбцы
+    grid-template-columns: 100px auto 200px;  */
+    /* grid-template-columns:repeat(4,100px) */
+    /* grid-template-columns:repeat(4,auto) */
+    /* 1fr */
+    grid-template-columns:repeat(4,1fr)
+
+
+}
+
+.item:nth-child(5){
+background-color: peachpuff;
+grid-row-start: 1 ;
+grid-row-end: 10 ;
+
+}
+
+
+.item:nth-child(5){
+background-color: blueviolet;
+}
+
+.item:nth-child(7){
+background-color: red;
+grid-column-start: 2;
+grid-column-start: 1;
+grid-column-end: 5;
+
+}
+
+.item:last-child{
+background-color: rgb(221, 221, 31);
+/* grid-colum: 1 / 4 =>коснись y первой линии и законьчит y четвертой */
+grid-column: span 4;
+
+}
+                
+.item:nth-child(18){
+    grid-column-end:span 3 ;
+    grid-column-start: 1 ;
+    grid-column-start: 10 ;
+
+}
+
+.item:nth-child(7){
+    background-color: peachpuff;
+    grid-row-start: 1 ;
+    grid-row-end: 10 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
